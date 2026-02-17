@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 import sys, os, re
 
-# TitaniumQ Independent Engine v4.0
-# Developed by: Anshik Pathak | Titanium Force Laboratory
-
+# TitaniumQ Power Engine v4.0 (Standardized)
 memory = {}
-LIB_PATH = "./tqlib"
+# Termux path for libraries
+LIB_PATH = "/data/data/com.termux/files/usr/etc/tqlib" 
 
 def tq_eval(expr):
     try:
-        # Pure math logic without external libraries
+        # Variables support including dot-logic in names if needed
         temp_expr = str(expr)
         for var in sorted(memory.keys(), key=len, reverse=True):
             if var in temp_expr:
@@ -19,30 +18,32 @@ def tq_eval(expr):
         return str(expr).strip('"')
 
 def load_module(module_name):
-    file_path = os.path.join(LIB_PATH, f"{module_name}.tq")
-    if os.path.exists(file_path):
-        with open(file_path, 'r') as f:
-            for line in f:
-                if "rakho" in line:
+    # Pehle local folder check karega, phir system folder
+    paths = ["./tqlib", LIB_PATH]
+    found = False
+    for p in paths:
+        file_path = os.path.join(p, f"{module_name}.tq")
+        if os.path.exists(file_path):
+            with open(file_path, 'r') as f:
+                for line in f:
                     process_line(line.strip())
-    else:
-        print(f"TitaniumQ Error: Module '{module_name}' nahi mila.")
+            found = True
+            break
+    if not found:
+        print(f"TitaniumQ Error: Module '{module_name}' not found in system paths.")
 
 def process_line(line):
     if not line or line.startswith("//"): return
     
-    # ZARURAT - Load Native Library
     if line.startswith("zarurat "):
         load_module(line.split(" ")[1])
-    
-    # RAKHO - Store in Memory
     elif line.startswith("rakho "):
-        parts = line[6:].split("=")
+        parts = line[6:].split("=", 1)
         memory[parts[0].strip()] = tq_eval(parts[1].strip())
-    
-    # BOL - Print
     elif line.startswith("bol "):
         print(tq_eval(line[4:].strip()))
+    elif line.startswith("chalao "):
+        os.system(tq_eval(line[7:].strip()))
 
 def run_tq(filename):
     try:
