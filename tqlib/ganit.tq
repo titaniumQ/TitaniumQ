@@ -1,0 +1,19 @@
+// TitaniumQ Advanced Mathematics Library
+// Core Constants
+rakho PI = 3.141592653589793
+rakho E = 2.718281828459045
+rakho TAU = 6.283185307179586
+
+// Physics & Engineering Constants
+rakho G_CONSTANT = 9.80665
+rakho LIGHT_VACUUM = 299792458
+rakho SOUND_AIR = 343
+
+// Conversion Factors
+rakho KM_TO_MILES = 0.621371
+rakho KG_TO_POUNDS = 2.20462
+rakho CELSIUS_TO_KELVIN = 273.15
+
+// Logical Buffers
+rakho SATYA = 1
+rakho ASATYA = 0
