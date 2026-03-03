@@ -1,8 +1,12 @@
-# TitaniumQ Programming Language
-Developed by **Anshik Pathak** at Titanium Force Laboratory.
+# TitaniumQ
+A lightweight programming language launcher for mobile and desktop.
 
-## 🚀 Quick Installation
-Aap ise directly pip se install kar sakte hain:
-```bash
-pip install titanium
-q
+## Installation
+`pip install titaniumq`
+
+## Usage
+To execute a .tq file, use:
+`tq your_file.tq`
+
+## Commands
+- `bol "text"`: Prints text to the console.

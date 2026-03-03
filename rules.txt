@@ -1,0 +1,278 @@
+bol : print
+dikhao : print
+chillao : lambda x: print(str(x).upper())
+fusfusao : lambda x: print(str(x).lower())
+nayi-line : lambda: print("\n")
+khali : lambda: print(" ")
+saaf-kar : os.system('cls')
+pucho : input
+suno : input
+gin-ke-bol : lambda x: print(f"{len(x.split())} words: {x}")
+maan-lo : variable_assign
+yaad-rakho : variable_assign
+badal-do : variable_update
+bhool-jao : variable_delete
+ank : int
+shabd : str
+sahi-galat : bool
+khazana : list
+jodo : lambda a, b: a + b
+naam-do : variable_rename
+jama : lambda a, b: float(a) + float(b)
+ghatao : lambda a, b: float(a) - float(b)
+guna : lambda a, b: float(a) * float(b)
+bhag : lambda a, b: float(a) / float(b)
+bacha-kucha : lambda a, b: float(a) % float(b)
+aadha : lambda a: float(a) / 2
+doguna : lambda a: float(a) * 2
+varg : lambda a: float(a)**2
+pow : math.pow
+lagbhag : round
+agar : if
+warna : else
+nahi-to-agar : elif
+barabar : ==
+alag-hai : !=
+bada-hai : >
+chota-hai : <
+aur : and
+ya : or
+bilkul-nahi : not
+jab-tak : while
+phir-se : continue
+bas-karo : break
+agli-baar : continue
+itni-baar : for_loop
+har-ek : for_each
+ghumo : while_true
+thehro : time.sleep
+waqt : time.ctime
+calendar : datetime.date.today
+tareeka : def
+kaam : function_call
+vapas-bhejo : return
+shuru-karo : main_start
+khatam : block_end
+bhejo : pass_data
+le-lo : get_args
+baar-baar-kaam : recursion
+madad : help
+version : lambda: print("TitaniumQ v1.0")
+file-kholo : open
+likho : write
+padho : read
+band-karo : close
+copy-karo : shutil.copy
+mitao : os.remove
+dhundo : find
+badlo : replace
+pahala : lambda x: x[0]
+aakhri : lambda x: x[-1]
+beech-ka : lambda x: x[len(x)//2]
+ulta : lambda x: x[::-1]
+sidha : lambda x: x
+milao : join
+todo : split
+nap-lo : len
+type-batao : type
+random-ank : random.randint
+sahi-hai? : lambda x: x is True
+galat-hai? : lambda x: x is False
+koshish-karo : try
+pakar-lo : except
+hamesha : finally
+galti-dikhao : raise
+intezar : time.sleep
+chalo : pass
+ruko : stop_execution
+upar-jao : scroll_up
+neeche-aao : scroll_down
+kon-hai? : who_is
+kya-hai? : what_is
+kahan-hai? : where_is
+jodo-shabd : concat
+hatao-khali : strip
+sirf-ank : isdigit
+sirf-shabd : isalpha
+bada-akshar : upper
+chota-akshar : lower
+ek-jaisa : compare
+shunya : None
+anant : float('inf')
+ganit-karo : eval
+varg-mool : math.sqrt
+log-nikalo : math.log
+sin-man : math.sin
+cos-man : math.cos
+tan-man : math.tan
+pi-ka-man : math.pi
+e-ka-man : math.e
+power-on : lambda: print("Titanium System: Powering On...")
+power-off : lambda: print("Titanium System: Powering Off...")
+sound-play : winsound.PlaySound
+beeps : winsound.Beep
+color-badlo : os.system('color')
+background-badlo : set_bg
+line-khicho : draw_line
+gol-banao : draw_circle
+box-banao : draw_rect
+point-dikhao : draw_point
+click-hua? : mouse_clicked
+key-dabai? : key_pressed
+mouse-kahan? : mouse_pos
+screen-size : pyautogui.size
+font-badlo : set_font
+hide-karo : window.hide
+show-karo : window.show
+rotate-karo : transform.rotate
+zoom-in : transform.scale_up
+zoom-out : transform.scale_down
+internet-se-lo : requests.get
+ip-check : socket.gethostbyname
+ping-karo : os.system('ping')
+server-banao : socket.socket
+client-banao : socket.connect
+json-padho : json.loads
+api-call : requests.request
+database-save : sqlite3.execute
+database-get : sqlite3.fetchone
+encrypt-karo : hashlib.sha256
+decrypt-karo : cipher.decrypt
+hash-nikalo : hashlib.md5
+binary-batao : bin
+hex-batao : hex
+ascii-batao : ord
+import-karo : import_module
+export-karo : export_module
+module-naam : __name__
+test-karo : unittest.run
+debug-karo : pdb.set_trace
+alvida : sys.exit
+net-check : socket.create_connection
+website-kholo : webbrowser.open
+chithi-bhejo : smtplib.sendmail
+download-kar : urllib.request.urlretrieve
+ip-pata-karo : socket.gethostname
+online-khojo : webbrowser.open_new_tab
+server-shuru : http.server
+client-connect : socket.connect
+api-pucho : requests.get
+mausam-batao : get_weather
+theli : dict
+theli-mein-rakho : update_dict
+theli-se-nikalo : pop_dict
+set-banao : set
+badal-nahi-sakta : tuple
+saja-do : sorted
+ulta-sajao : lambda x: sorted(x, reverse=True)
+saaf-safai : lambda x: list(set(x))
+jodi-banao : zip
+gin-ke-dikhao : enumerate
+nayi-file : open_w
+folder-banao : os.mkdir
+file-ka-naam : os.rename
+file-hai-kya? : os.path.exists
+file-ka-size : os.path.getsize
+permission-do : os.chmod
+copy-paste : shutil.copy2
+move-karo : shutil.move
+kachre-ka-dabba : send2trash
+zip-karo : zipfile.ZipFile
+system-ka-naam : platform.system
+ram-check : psutil.virtual_memory
+battery-kitni? : psutil.sensors_battery
+screen-band : screen_off
+awaaz-badhao : volume_up
+awaaz-kam : volume_down
+mute-karo : volume_mute
+gaana-bajao : playsound
+video-chalao : start_video
+camera-kholo : cv2.VideoCapture
+savdhan : try
+pakad-lo : except
+har-haal-mein : finally
+khud-ki-galti : raise
+password-pucho : getpass.getpass
+tala-lagao : cryptography.encrypt
+chabi-lagao : cryptography.decrypt
+secret-code : hashlib.sha512
+verify-karo : hmac.compare_digest
+back-up : shutil.make_archive
+kal-karo : schedule.every
+abhi-ka-waqt : datetime.now
+ruko-zara : time.sleep
+alarm-lagao : set_alarm
+kitna-der-hua? : execution_timer
+fast-forward : speed_up
+slow-motion : speed_down
+auto-pilot : automation_mode
+band-karo-sab : sys.exit
+phir-se-shuru : os.restart
+graph-dikhao : matplotlib.pyplot.show
+average-nikalo : statistics.mean
+sabse-bada : max
+sabse-chota : min
+random-number : random.random
+sikka-uchalo : random.choice(['Heads', 'Tails'])
+dice-phenko : random.randint(1, 6)
+percentage : lambda x, y: (x/y)*100
+prime-hai-kya? : is_prime_func
+table-likho : multiplication_table
+data-dikhao : pandas.DataFrame.head
+kachra-saaf : pandas.dropna
+dhundo-rishta : pandas.corr
+hissa-karo : train_test_split
+khash-baat : feature_selection
+seedha-karo : MinMaxScaler
+group-banao : pandas.groupby
+bhar-do : pandas.fillna
+badlo-ank-mein : LabelEncoder
+column-naam : pandas.rename
+dimag-banao : sklearn.initialize
+sikhao : model.fit
+andaza-lagao : model.predict
+kitna-sahi? : accuracy_score
+yaad-rakho-dimag : joblib.dump
+purana-dimag-lao : joblib.load
+galti-check : loss_function
+behtar-banao : optimizer.step
+pata-lagao : classifier.predict
+kitna-hoga? : regressor.predict
+parat-banao : keras.layers.Dense
+input-parat : keras.Input
+chhupi-parat : HiddenLayer
+output-parat : OutputLayer
+neuron-gin-lo : layer.units
+activator : activation_function
+dimag-ka-jaal : model.summary
+photo-samjho : Conv2D
+shabd-samjho : NLP_Processor
+awaaz-pehchano : SpeechRecognition
+chehra-dekho : OpenCV_FaceDetect
+rang-pehchano : ColorDetection
+chalti-chiz : MotionDetection
+chat-bot-shuru : ChatBot_Init
+sentiment-check : TextBlob.sentiment
+auto-learn : ReinforcementLearning
+dost-dhundo : KMeans_Clustering
+faisla-lo : DecisionTree
+forest-banao : RandomForest
+brain-stop : EarlyStopping
+janam-lo : __init__
+pehchan-batao : __str__
+gin-lo-mujhe : __len__
+mil-jao : __add__
+ek-saath : threading.Thread
+intezar-kar : await
+jaldi-karo : asyncio.run
+priority-do : set_priority
+upar-se-jodo : decorator_func
+check-karo-pehle : security_decorator
+ek-ek-karke : yield
+agli-bari : next
+naksha-banao : class_definition
+asli-chiz : object_instantiation
+baap-ki-khoobi : inheritance
+ganit-khazana : import_numpy
+vigyan-khazana : import_scipy
+graph-khazana : import_matplotlib
